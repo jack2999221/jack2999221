@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica para Estudiantes de Medicina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .fun-fact {
+            color: #007bff;
+            margin-top: 10px;
+        }
+        .result {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        const questions = [
+            {
+                question: "¿Cuál es el tipo más común de diabetes en adultos?",
+                options: ["Diabetes tipo 1", "Diabetes tipo 2", "Diabetes gestacional", "Diabetes monogénica"],
+                answer: 1,
+                funFact: "La diabetes tipo 2 es la más común entre los adultos y está relacionada con el estilo de vida y factores genéticos."
+            },
+            // Agrega más preguntas según sea necesario
+        ];
+
+        function showFunFact(questionIndex, optionIndex) {
+            const funFactElement = document.getElementById('fun-fact-' + questionIndex);
+            if (optionIndex === questions[questionIndex].answer) {
+                funFactElement.textContent = "¡Correcto! " + questions[questionIndex].funFact;
+            } else {
+                funFactElement.textContent = "Incorrecto. " + questions[questionIndex].funFact;
+            }
+        }
+
+        function calculateScore() {
+            let score = 0;
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector('input[name="question-' + index + '"]:checked');
+                if (selectedOption && parseInt(selectedOption.value) === question.answer) {
+                    score++;
+                }
+            });
+            document.getElementById('result').textContent = "Tu puntaje es: " + score + " de " + questions.length;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Práctica para Estudiantes de Medicina</h1>
+        <form>
+            ${questions.map((q, i) => `
+                <div class="question">
+                    <p>${q.question}</p>
+                    ${q.options.map((option, j) => `
+                        <label>
+                            <input type="radio" name="question-${i}" value="${j}" onclick="showFunFact(${i}, ${j})">
+                            ${option}
+                        </label><br>
+                    `).join('')}
+                    <p id="fun-fact-${i}" class="fun-fact"></p>
+                </div>
+            `).join('')}
+            <button type="button" onclick="calculateScore()">Obtener Puntaje</button>
+        </form>
+        <p id="result" class="result"></p>
+    </div>
+</body>
+</html>
