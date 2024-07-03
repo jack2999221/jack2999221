@@ -86,3 +86,286 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endocrino Práctica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .question {
+            margin: 15px 0;
+        }
+        .question h3 {
+            margin: 0;
+        }
+        .question .options {
+            margin-left: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Endocrino Práctica ??</h1>
+    <form id="quizForm">
+        <div class="question">
+            <h3>1. ¿Cuál de las siguientes estructuras tiene mayor riesgo de lesión durante esta etapa de la cirugía?</h3>
+            <div class="options">
+                <input type="radio" name="q1" value="A"> A) Uréter izquierdo<br>
+                <input type="radio" name="q1" value="B"> B) Nervio obturador<br>
+                <input type="radio" name="q1" value="C"> C) Arteria ovárica izquierda<br>
+                <input type="radio" name="q1" value="D"> D) Ligamento redondo del útero<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>2. ¿Qué diagnóstico es más probable en esta paciente?</h3>
+            <div class="options">
+                <input type="radio" name="q2" value="A"> A) Apendicitis<br>
+                <input type="radio" name="q2" value="B"> B) Embarazo ectópico<br>
+                <input type="radio" name="q2" value="C"> C) Cálculo renal<br>
+                <input type="radio" name="q2" value="D"> D) Torsión ovárica<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>3. ¿Qué parte de la glándula mamaria está probablemente afectada por la dilatación ductal?</h3>
+            <div class="options">
+                <input type="radio" name="q3" value="A"> A) Lobulillo<br>
+                <input type="radio" name="q3" value="B"> B) Conducto lactífero<br>
+                <input type="radio" name="q3" value="C"> C) Estroma<br>
+                <input type="radio" name="q3" value="D"> D) Areola<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>4. ¿Qué diagnóstico es más probable en esta paciente?</h3>
+            <div class="options">
+                <input type="radio" name="q4" value="A"> A) Hipertiroidismo<br>
+                <input type="radio" name="q4" value="B"> B) Hipotiroidismo<br>
+                <input type="radio" name="q4" value="C"> C) Tiroiditis de Hashimoto<br>
+                <input type="radio" name="q4" value="D"> D) Bocio multinodular tóxico<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>5. ¿Qué complicación de la diabetes mellitus tipo 1 está experimentando este paciente?</h3>
+            <div class="options">
+                <input type="radio" name="q5" value="A"> A) Cetoacidosis diabética<br>
+                <input type="radio" name="q5" value="B"> B) Hiperglucemia no cetósica<br>
+                <input type="radio" name="q5" value="C"> C) Hipoglucemia<br>
+                <input type="radio" name="q5" value="D"> D) Coma hiperosmolar<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>6. ¿Cuál es el diagnóstico más probable?</h3>
+            <div class="options">
+                <input type="radio" name="q6" value="A"> A) Insuficiencia cardíaca congestiva<br>
+                <input type="radio" name="q6" value="B"> B) Enfermedad pulmonar obstructiva crónica<br>
+                <input type="radio" name="q6" value="C"> C) Nefropatía diabética<br>
+                <input type="radio" name="q6" value="D"> D) Trombosis venosa profunda<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>7. ¿Qué hormona es esencial para la lactancia en mujeres?</h3>
+            <div class="options">
+                <input type="radio" name="q7" value="A"> A) Oxitocina<br>
+                <input type="radio" name="q7" value="B"> B) Progesterona<br>
+                <input type="radio" name="q7" value="C"> C) Prolactina<br>
+                <input type="radio" name="q7" value="D"> D) Estrógeno<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>8. ¿Cuál es una causa común de hipertiroidismo?</h3>
+            <div class="options">
+                <input type="radio" name="q8" value="A"> A) Tiroiditis de Hashimoto<br>
+                <input type="radio" name="q8" value="B"> B) Enfermedad de Graves<br>
+                <input type="radio" name="q8" value="C"> C) Deficiencia de yodo<br>
+                <input type="radio" name="q8" value="D"> D) Hipopituitarismo<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>9. ¿Qué parte del cuerpo produce la melatonina?</h3>
+            <div class="options">
+                <input type="radio" name="q9" value="A"> A) Glándula pineal<br>
+                <input type="radio" name="q9" value="B"> B) Páncreas<br>
+                <input type="radio" name="q9" value="C"> C) Hipotálamo<br>
+                <input type="radio" name="q9" value="D"> D) Glándulas suprarrenales<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>10. ¿Qué trastorno endocrino se sospecha en esta paciente?</h3>
+            <div class="options">
+                <input type="radio" name="q10" value="A"> A) Hipoparatiroidismo<br>
+                <input type="radio" name="q10" value="B"> B) Hiperparatiroidismo<br>
+                <input type="radio" name="q10" value="C"> C) Hipotiroidismo<br>
+                <input type="radio" name="q10" value="D"> D) Hiperaldosteronismo<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>11. ¿Cuál es el principal efecto de la insulina?</h3>
+            <div class="options">
+                <input type="radio" name="q11" value="A"> A) Aumenta la glucosa en sangre<br>
+                <input type="radio" name="q11" value="B"> B) Disminuye la glucosa en sangre<br>
+                <input type="radio" name="q11" value="C"> C) Estimula la lipólisis<br>
+                <input type="radio" name="q11" value="D"> D) Inhibe la glucogénesis<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>12. ¿Qué órgano es el principal blanco de la acción de la hormona del crecimiento (GH)?</h3>
+            <div class="options">
+                <input type="radio" name="q12" value="A"> A) Hígado<br>
+                <input type="radio" name="q12" value="B"> B) Riñón<br>
+                <input type="radio" name="q12" value="C"> C) Pulmones<br>
+                <input type="radio" name="q12" value="D"> D) Corazón<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>13. ¿Cuál es el principal efecto de la oxitocina durante el parto?</h3>
+            <div class="options">
+                <input type="radio" name="q13" value="A"> A) Relaja el útero<br>
+                <input type="radio" name="q13" value="B"> B) Estimula las contracciones uterinas<br>
+                <input type="radio" name="q13" value="C"> C) Disminuye la producción de leche<br>
+                <input type="radio" name="q13" value="D"> D) Inhibe la ovulación<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>14. ¿Qué hormona regula el ritmo circadiano?</h3>
+            <div class="options">
+                <input type="radio" name="q14" value="A"> A) Melatonina<br>
+                <input type="radio" name="q14" value="B"> B) Insulina<br>
+                <input type="radio" name="q14" value="C"> C) Cortisol<br>
+                <input type="radio" name="q14" value="D"> D) Estrógeno<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>15. ¿Qué medicamento es comúnmente utilizado para mejorar la sensibilidad a la insulina en la diabetes tipo 2?</h3>
+            <div class="options">
+                <input type="radio" name="q15" value="A"> A) Metformina<br>
+                <input type="radio" name="q15" value="B"> B) Glipizida<br>
+                <input type="radio" name="q15" value="C"> C) Insulina NPH<br>
+                <input type="radio" name="q15" value="D"> D) Glucagón<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>16. ¿Cuál es el principal mecanismo de acción de la metformina?</h3>
+            <div class="options">
+                <input type="radio" name="q16" value="A"> A) Estimula la liberación de insulina<br>
+                <input type="radio" name="q16" value="B"> B) Disminuye la resistencia a la insulina<br>
+                <input type="radio" name="q16" value="C"> C) Aumenta la producción de glucagón<br>
+                <input type="radio" name="q16" value="D"> D) Inhibe la absorción de glucosa en el intestino<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>17. ¿Qué trastorno endocrino se sospecha en esta paciente?</h3>
+            <div class="options">
+                <input type="radio" name="q17" value="A"> A) Hipoparatiroidismo<br>
+                <input type="radio" name="q17" value="B"> B) Hiperparatiroidismo<br>
+                <input type="radio" name="q17" value="C"> C) Hipotiroidismo<br>
+                <input type="radio" name="q17" value="D"> D) Hiperaldosteronismo<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>18. ¿Qué trastorno endocrino se sospecha en esta paciente?</h3>
+            <div class="options">
+                <input type="radio" name="q18" value="A"> A) Hipertiroidismo<br>
+                <input type="radio" name="q18" value="B"> B) Hipotiroidismo<br>
+                <input type="radio" name="q18" value="C"> C) Enfermedad de Addison<br>
+                <input type="radio" name="q18" value="D"> D) Síndrome de Cushing<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>19. ¿Qué complicación de la diabetes mellitus tipo 2 está experimentando este paciente?</h3>
+            <div class="options">
+                <input type="radio" name="q19" value="A"> A) Retinopatía diabética<br>
+                <input type="radio" name="q19" value="B"> B) Neuropatía diabética<br>
+                <input type="radio" name="q19" value="C"> C) Nefropatía diabética<br>
+                <input type="radio" name="q19" value="D"> D) Cetoacidosis diabética<br>
+            </div>
+        </div>
+        <div class="question">
+            <h3>20. ¿Qué células del páncreas están destruidas en la diabetes mellitus tipo 1?</h3>
+            <div class="options">
+                <input type="radio" name="q20" value="A"> A) Células alfa<br>
+                <input type="radio" name="q20" value="B"> B) Células beta<br>
+                <input type="radio" name="q20" value="C"> Células delta<br>
+                <input type="radio" name="q20" value="D"> D) Células PP<br>
+            </div>
+        </div>
+        <button type="button" onclick="submitQuiz()">Enviar Respuestas</button>
+    </form>
+    <div class="result" id="result"></div>
+
+    <script>
+        const correctAnswers = {
+            q1: 'A',
+            q2: 'D',
+            q3: 'B',
+            q4: 'B',
+            q5: 'C',
+            q6: 'A',
+            q7: 'C',
+            q8: 'B',
+            q9: 'A',
+            q10: 'B',
+            q11: 'B',
+            q12: 'A',
+            q13: 'B',
+            q14: 'A',
+            q15: 'A',
+            q16: 'B',
+            q17: 'B',
+            q18: 'C',
+            q19: 'A',
+            q20: 'B'
+        };
+
+        function submitQuiz() {
+            let score = 0;
+            const form = document.getElementById('quizForm');
+            const formData = new FormData(form);
+
+            for (let [key, value] of formData.entries()) {
+                if (value === correctAnswers[key]) {
+                    score++;
+                }
+            }
+
+            const totalQuestions = Object.keys(correctAnswers).length;
+            const percentage = (score / totalQuestions) * 100;
+
+            let emoji = '';
+            if (percentage === 100) {
+                emoji = '??';
+            } else if (percentage >= 80) {
+                emoji = '??';
+            } else if (percentage >= 50) {
+                emoji = '??';
+            } else {
+                emoji = '??';
+            }
+
+            document.getElementById('result').innerHTML = `Puntuación: ${score} / ${totalQuestions} ${emoji}`;
+        }
+    </script>
+</body>
+</html>
+
