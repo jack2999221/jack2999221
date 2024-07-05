@@ -40,59 +40,66 @@
         const questions = [
             {
                 question: "1. ¿Cuál es la función principal de la glándula tiroides? 🧠",
-
-                image: "https://example.com/image1.jpg" // Replace with actual image URL
+options: ["Producir insulina", "Regular el metabolismo", "Producir hormonas sexuales", "Regular el equilibrio de líquidos"],
+                answer: 1,
+                funFact: "La glándula tiroides regula el metabolismo, ¡es como el termostato del cuerpo! 🌡️",
+                image: "https://copilot.microsoft.com/images/create/organos-endocrinos-en-dibujos-animados-felices/1-6687517f17404bfd852c88c8ab47e4b9?id=xLN4rVL%2b%2fYXcX%2bkbexTDPQ%3d%3d&view=detailv2&idpp=genimg&idpclose=1&thId=OIG3.eeu1vBkG_7aBb3nprzKT&FORM=SYDBIC" // Replace with actual image URL
             },
             {
-                question: "2. ¿Qué hormona es responsable de la regulación del azúcar en sangre? 🍬",
-
-                image: "https://example.com/image2.jpg" // Replace with actual image URL
+                question: "2. ¿Cuantos aminoacidos tiene la hormona responsable de la regulación de la glucosa en sangre? 🍬",
+options: ["Adrenalina (45)", "Insulina(51)", "Cortisol(63)", "Tiroxina(27)"],
+                answer: 1,
+                funFact: "La insulina es producida por el páncreas y ayuda a controlar los niveles de azúcar en sangre. 🌟",
+                image: "https://copilot.microsoft.com/images/create/organos-endocrinos-en-dibujos-animados-felices/1-668751beeb904107afc4873c805d2335?id=NhBL%2fFe6UNzsRg5xPXantw%3d%3d&view=detailv2&idpp=genimg&idpclose=1&thId=OIG4.7dohjJsFK_nwgQTUzDWT&FORM=SYDBIC" // Replace with actual image URL
             },
             {
-                question: "3. ¿Cuál es la función de las células de Leydig en los testículos? 🧪",
-
-                image: "https://example.com/image3.jpg" // Replace with actual image URL
-            }, {
+                question: "3. Caso clínico: Paciente de 35 años con aumento de peso, cansancio y piel seca. ¿Cuál es el Diagnóstico más probable para este paciente?",
+                options: ["A) Hipertiroidismo", "B) Hipotiroidismo", "C) Diabetes tipo 1", "D) Diabetes tipo 2"],
+                answer: 1,
+                funFact: "El hipotiroidismo puede causar síntomas como aumento de peso, fatiga y piel seca. 🤒",
+                image: "https://copilot.microsoft.com/images/create/goku-en-medio-de-dragon-ball/1-6687521b67af492395f1cf0aa4f4bb0c?id=XrIcQnYhN25XPzx9MiLiPA%3d%3d&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.qvGiF0JLurR46AtrJ8_M&FORM=SYDBIC" // Replace with actual image URL
+            },
+{
                 question: "4. ¿Qué estructura conecta el útero con la vagina? 🧬",
                 options: ["Trompas de Falopio", "Ovarios", "Cérvix", "Endometrio"],
                 answer: 2,
                 funFact: "El cérvix es la parte inferior del útero que se abre hacia la vagina. 🩺",
-                image: "https://via.placeholder.com/100" // Placeholder, replace with actual image URL
+                image: "sandbox:/path/to/generated/image1" // Placeholder, replace with actual image URL
             },
             {
                 question: "5. ¿Cuál es la función de las células de Sertoli en los testículos? 🧫",
                 options: ["Producir espermatozoides", "Producir testosterona", "Nutrir y proteger a los espermatozoides en desarrollo", "Transportar espermatozoides"],
                 answer: 2,
                 funFact: "Las células de Sertoli nutren y protegen a los espermatozoides en desarrollo. 🌱",
-                image: "https://via.placeholder.com/100" // Placeholder, replace with actual image URL
+                image: "sandbox:/path/to/generated/image2" // Placeholder, replace with actual image URL
             },
             {
                 question: "6. ¿Qué enfermedad se caracteriza por la producción excesiva de hormona del crecimiento en adultos? 🏋️",
                 options: ["Gigantismo", "Acromegalia", "Enanismo hipofisario", "Síndrome de Cushing"],
                 answer: 1,
                 funFact: "La acromegalia es causada por la producción excesiva de hormona del crecimiento en adultos. 📏",
-                image: "https://via.placeholder.com/100" // Placeholder, replace with actual image URL
+                image: "sandbox:/path/to/generated/image3" // Placeholder, replace with actual image URL
             },
             {
                 question: "7. ¿Qué hormona es producida por el páncreas y actúa como antagonista de la insulina? 🍽️",
                 options: ["Glucagón", "Adrenalina", "Cortisol", "Tiroxina"],
                 answer: 0,
                 funFact: "El glucagón aumenta los niveles de glucosa en sangre, mientras que la insulina los disminuye. 🔄",
-                image: "https://via.placeholder.com/100" // Placeholder, replace with actual image URL
+                image: "sandbox:/path/to/generated/image4" // Placeholder, replace with actual image URL
             },
             {
                 question: "8. ¿Cuál es la función de la hormona luteinizante (LH) en las mujeres? 👶",
                 options: ["Estimular la ovulación", "Regular el ciclo menstrual", "Preparar el endometrio para la implantación", "Producir leche materna"],
                 answer: 0,
                 funFact: "La LH estimula la ovulación, que es la liberación del óvulo del ovario. 🌸",
-                image: "https://via.placeholder.com/100" // Placeholder, replace with actual image URL
+                image: "sandbox:/path/to/generated/image5" // Placeholder, replace with actual image URL
             },
             {
                 question: "9. ¿Qué enfermedad se caracteriza por la falta de producción de insulina por el páncreas? 🍭",
                 options: ["Diabetes tipo 1", "Diabetes tipo 2", "Hipoglucemia", "Hiperglucemia"],
                 answer: 0,
                 funFact: "La diabetes tipo 1 es una enfermedad autoinmune donde el páncreas no produce insulina. 💉",
-                image: "https://via.placeholder.com/100" // Placeholder, replace with actual image URL
+                image: "sandbox:/path/to/generated/image6" // Placeholder, replace with actual image URL
             },
             {
                 question: "10. ¿Qué estructura produce los óvulos en las mujeres? 🌸",
