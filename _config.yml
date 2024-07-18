@@ -1,0 +1,5 @@
+theme: jekyll-gh
+gem "jekyll-gh"
+bundle install
+bundle exec jekyll serve
+
