@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Online para Estudiantes de Medicina 🩺</title>
+    <style>
+        body {
+            /* Your CSS styles here */
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+        .container {    <div class="container">
+            max-width: 800px;        <h1>Examen Online para Estudiantes de Medicina 🩺</h1>
+            margin: auto;        <form>
+            padding: 20px;            ${questions.map((q, i) => `
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);                <div class="question">
+        }                    <p>${q.question}</p>
+        .question {                    ${q.options.map((option, j) => `
+            margin-bottom: 20px;                        <div class="option">
+        }                            <input type="radio" name="question-${i}" value="${j}" onclick="showFunFact(${i}, ${j})">
+        .fun-fact {                            <label>${option}</label>
+            color: #007bff;                        </div>
+            margin-top: 10px;                    `).join('')}
+        }                    <p id="fun-fact-${i}" class="fun-fact"></p>
+        .result {                </div>
+            font-size: 1.2em;            `).join('')}
+            margin-top: 20px;            <button type="button" onclick="calculateScore()">Obtener Puntaje</button>
+        }        </form>
+        .option {        <p id="result" class="result"></p>
+            margin-bottom: 10px;        <a href="https://vscode.dev/github.com/jack2999221/jack2999221/blob/main/Doc.%20HTML.txt#L296">Examen previo</a>
+        }    </div>
+        .illustration {
+            display: block;    <script>
+            max-width: 100px;        // Your JavaScript code here
+            margin: 10px auto;    </script>
+        }</body>
+    </style></html>
+    <script> suprarrenales"],
+                answer: 1,
+                funFact: "La oxitocina, conocida como la 'hormona del amor', es producida en la hipófisis posterior. ❤️",
+            },            
+            {
+                question: "2. ¿Qué hormona es responsable de la regulación del azúcar en sangre? 🍬",
+                options: ["Adrenalina", "Insulina", "Cortisol", "Tiroxina"],
+                answer: 1,
+                funFact: "La insulina es producida por el páncreas y ayuda a controlar los niveles de azúcar en sangre. 🌟",
+            },
+            {
+                question: "3. Caso clínico: Paciente de 35 años con aumento de peso, cansancio y piel seca. ¿Cuál es el Diagnóstico más probable para este paciente?",
+                options: ["A) Hipertiroidismo", "B) Hipotiroidismo", "C) Diabetes tipo 1", "D) Diabetes tipo 2"],
+                answer: 1,
+                funFact: "El hipotiroidismo puede causar síntomas como aumento de peso, fatiga y piel seca. 🤒",
+            },
+            {
+                question: "3. Caso clínico: Paciente de 35 años con aumento de peso, cansancio y piel seca. ¿Cuál es el Diagnóstico más probable para este paciente?",
+                options: ["A) Hipertiroidismo", "B) Hipotiroidismo", "C) Diabetes tipo 1", "D) Diabetes tipo 2"],
+                answer: 1,
+                funFact: "El hipotiroidismo puede causar síntomas como aumento de peso, fatiga y piel seca. 🤒",
+            },
+            {
+                question: "4. ¿Qué hormona es producida por la glándula paratiroides y regula el nivel de calcio en la sangre?",
+                options: ["A) Paratohormona", "B) Calcitonina", "C) Tiroxina", "D) Triyodotironina"],
+                answer: 0,
+                funFact: "La paratohormona es esencial para mantener el equilibrio de calcio y fósforo en nuestros huesos y sangre. 💪",
+            },
+            {
+                question: "5. ¿Cuál es la función de la hormona foliculoestimulante (FSH) en las mujeres?",
+                options: ["A) Estimular el crecimiento de los folículos ováricos", "B) Estimular la ovulación", "C) Regular el ciclo menstrual", "D) Preparar el endometrio para la implantación"],
+                answer: 0,
+                funFact: "La FSH es crucial para la fertilidad femenina, ya que estimula el desarrollo de los óvulos en los ovarios. 🌺",
+            },
+            {
+                question: "6. Caso clínico: Paciente de 40 años con pérdida de peso, sudoración excesiva y nerviosismo. ¿Cuál es el diagnóstico más probable para este paciente?",
+                options: ["A) Hipertiroidismo", "B) Hipotiroidismo", "C) Diabetes tipo 1", "D) Diabetes tipo 2"],
+                answer: 0,
+                funFact: "El hipertiroidismo puede acelerar significativamente el metabolismo del cuerpo, causando pérdida de peso y nerviosismo. ⚡",
+            },
+            {
+                question: "7. ¿Qué enfermedad se caracteriza por la producción insuficiente de hormona antidiurética (ADH) por la hipófisis posterior?",
+                options: ["A) Diabetes insípida central", "B) Diabetes insípida nefrogénica", "C) Diabetes mellitus", "D) Hipotiroidismo"],
+                answer: 0,
+                funFact: "La diabetes insípida central ocurre cuando la hipófisis no produce suficiente ADH, llevando a una sed excesiva y micción frecuente. 💧",
+            },
+            {
+                question: "8. ¿Qué hormona es producida por la placenta durante el embarazo?",
+                options: ["A) Gonadotropina coriónica humana (hCG)", "B) Hormona del crecimiento", "C) Hormona luteinizante", "D) Prolactina"],
+                answer: 0,
+                funFact: "La hCG es vital durante el embarazo y es la hormona que detectan las pruebas de embarazo. 🤰",
+            },
+            {
+                question: "9. ¿Qué enfermedad se caracteriza por la producción excesiva de hormona paratiroidea por las glándulas paratiroides?",
+                options: ["A) Hipoparatiroidismo", "B) Hiperparatiroidismo", "C) Hipocalcemia", "D) Hipercalcemia"],
+                answer: 1,
+                funFact: "El hiperparatiroidismo puede llevar a niveles elevados de calcio en la sangre y puede afectar a varios órganos. ☠️",
+            },
+            {
+                question: "10. ¿Qué estructura produce la hormona oxitocina?",
+                options: ["A) Hipófisis anterior", "B) Hipófisis posterior", "C) Glándula tiroides", "D) Glándulas suprarrenales"],
+                answer: 1,
+                funFact: "La oxitocina, conocida como la 'hormona del amor', es producida en la hipófisis posterior. ❤️",
+            },
+            {
+                question: "11. Caso clínico: Paciente de 50 años con sed excesiva, micción frecuente y pérdida de peso. ¿Cuál es el diagnóstico más probable para este paciente?",
+                options: ["A) Diabetes insípida", "B) Diabetes mellitus", "C) Hipotiroidismo", "D) Hipertiroidismo"],
+                answer: 1,
+                funFact: "La diabetes mellitus puede causar sed excesiva y micción frecuente debido a altos niveles de glucosa en la sangre. 🍬",
+            },
+            {
+                question: "12. ¿Qué enfermedad se caracteriza por la producción insuficiente de hormonas suprarrenales?",
+                options: ["A) Enfermedad de Addison", "B) Síndrome de Cushing", "C) Hiperaldosteronismo", "D) Feocromocitoma"],
+                answer: 0,
+                funFact: "La enfermedad de Addison puede resultar en fatiga, debilidad y otros síntomas debido a la falta de hormonas suprarrenales. 🌅",
+            }
+            {
+                question: "21. Caso clínico: Paciente de 50 años con sed excesiva, micción frecuente y pérdida de peso. ¿Cuál es el diagnóstico más probable para este paciente?",
+                options: ["A) Diabetes insípida", "B) Diabetes mellitus", "C) Hipotiroidismo", "D) Hipertiroidismo"],
+                answer: 1,
+                funFact: "La diabetes mellitus puede causar sed excesiva y micción frecuente debido a altos niveles de glucosa en la sangre. 🍬",
+            },
+            {
+                question: "22. ¿Qué enfermedad se caracteriza por la producción insuficiente de hormonas suprarrenales?",
+                options: ["A) Enfermedad de Addison", "B) Síndrome de Cushing", "C) Hiperaldosteronismo", "D) Feocromocitoma"],
+                answer: 0,
+                funFact: "La enfermedad de Addison puede resultar en fatiga, debilidad y otros síntomas debido a la falta de hormonas suprarrenales. 🌅",
+            }
+            {
+                {
+                    question: "23. ¿Cuál es la hormona responsable de regular el metabolismo en el cuerpo?",
+                    options: ["A) Insulina", "B) Glucagón", "C) Tiroxina", "D) Somatotropina"],
+                    answer: 2,
+                    funFact: "La tiroxina es una hormona producida por la glándula tiroides que regula el metabolismo en el cuerpo. ⚡️",
+                },
+                {
+                    question: "24. ¿Qué hormona es responsable de regular el nivel de azúcar en la sangre?",
+                    options: ["A) Insulina", "B) Glucagón", "C) Somatotropina", "D) Tiroxina"],
+                    answer: 0,
+                    funFact: "La insulina es una hormona producida por el páncreas que regula el nivel de azúcar en la sangre. 🍬",
+                },
+                {
+                    question: "25. ¿Cuál es la hormona responsable de estimular el crecimiento y desarrollo en los niños?",
+                    options: ["A) Somatotropina", "B) Insulina", "C) Glucagón", "D) Tiroxina"],
+                    answer: 0,
+                    funFact: "La somatotropina, también conocida como hormona del crecimiento, es responsable de estimular el crecimiento y desarrollo en los niños. 🌱",
+                },
+                {
+                    question: "26. ¿Qué hormona es responsable de regular el equilibrio de sal y agua en el cuerpo?",
+                    options: ["A) Aldosterona", "B) Insulina", "C) Glucagón", "D) Somatotropina"],
+                    answer: 0,
+                    funFact: "La aldosterona es una hormona producida por las glándulas suprarrenales que regula el equilibrio de sal y agua en el cuerpo. 💧",
+                },
+                {
+                    question: "27. ¿Cuál es la hormona responsable de regular el ciclo menstrual en las mujeres?",
+                    options: ["A) Hormona luteinizante (LH)", "B) Hormona foliculoestimulante (FSH)", "C) Progesterona", "D) Estrógeno"],
+                    answer: 0,
+                    funFact: "La hormona luteinizante (LH) es responsable de regular el ciclo menstrual en las mujeres. 🌸",
+                },
+                {
+                    question: "28. ¿Qué hormona es responsable de estimular la producción de leche materna?",
+                    options: ["A) Prolactina", "B) Oxitocina", "C) Estrógeno", "D) Progesterona"],
+                    answer: 0,
+                    funFact: "La prolactina es la hormona responsable de estimular la producción de leche materna en las mujeres. 🍼",
+                },
+                {
+                    question: "29. ¿Cuál es la hormona responsable de regular el apetito y la saciedad?",
+                    options: ["A) Leptina", "B) Ghrelina", "C) Insulina", "D) Somatotropina"],
+                    answer: 0,
+                    funFact: "La leptina es la hormona responsable de regular el apetito y la saciedad en el cuerpo. 🍽️",
+                },
+                {
+                    question: "30. ¿Qué hormona es responsable de regular el ritmo circadiano?",
+                    options: ["A) Melatonina", "B) Serotonina", "C) Dopamina", "D) Endorfina"],
+                    answer: 0,
+                    funFact: "La melatonina es la hormona responsable de regular el ritmo circadiano, ayudando a regular el sueño y la vigilia. 😴",
+                }   
+                  ];
+        function showFunFact(questionIndex, optionIndex) {
+            const funFactElement = document.getElementById('fun-fact-' + questionIndex);
+            if (optionIndex === questions[questionIndex].answer) {
+                funFactElement.textContent = "¡Correcto! " + questions[questionIndex].funFact;
+            } else {
+                funFactElement.textContent = "Incorrecto. " + questions[questionIndex].funFact;
+            }
+        }
+
+        function calculateScore() {
+            let score = 0;
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector('input[name="question-' + index + '"]:checked');
+                if (selectedOption && parseInt(selectedOption.value) === question.answer) {
+                    score++;
+                }
+            }
+            );
+            document.getElementById('result').textContent = "Tu puntaje es: " + score + " de " + questions.length + " 🎉";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Examen Online para Estudiantes de Medicina 🩺</h1>
+        <form>
+            ${questions.map((q, i) => `
+                <div class="question">
+                    <p>${q.question}</p>
+                    ${q.options.map((option, j) => `
+                        <div class="option">
+                            <input type="radio" name="question-${i}" value="${j}" onclick="showFunFact(${i}, ${j})">
+                            <label>${option}</label>
+                        </div>
+                    `).join('')}
+                    <p id="fun-fact-${i}" class="fun-fact"></p>
+                </div>
+            `).join('')}
+            <button type="button" onclick="calculateScore()">Obtener Puntaje</button>
+        </form>
+        <p id="result" class="result"></p>
+    </div>
+</body>
+</html>
+
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
