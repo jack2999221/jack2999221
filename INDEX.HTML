@@ -1,113 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Gozler - Servicios</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #ececec;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #2f3542;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        header img {
-            width: 300px;
-            border-radius: 10px;
-            border: 5px solid #57606f;
-        }
-        nav {
-            background-color: #3742fa;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-        footer {
-            background-color: #2f3542;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-        footer a {
-            color: #1e90ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lectura de sincronía mística</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="STYLE.CSS" />
 </head>
 <body>
-    <header>
-        <img src="C:\Users\jack_\Downloads\willi.jpg" alt="William Gozler">
-        <h1>William Gozler</h1>
-    </header>
+  <main class="page">
+    <section class="header">
+      <p class="eyebrow">Lectura de sincronía mística</p>
+      <h1>La selección no es caótica — está sincronizada con tu vibración numérica</h1>
+    </section>
 
-    <nav>
-        <ul>
-            <li><a href="#private">🔒 Servicios Privados</a></li>
-            <li><a href="#parties">🎉 Fiestas Privadas</a></li>
-            <li><a href="#orgy">🔥 Organizador de Orgías</a></li>
-            <li><a href="#drag">👠 Evento Drag (Próximamente)</a></li>
-        </ul>
-    </nav>
+    <form class="oracle-form" action="#" method="post">
+      <div class="row">
+        <label class="field">
+          <span>Fecha de nacimiento</span>
+          <input type="date" name="birthDate" value="1996-03-27" required />
+        </label>
 
-    <main>
-        <section id="private">
-            <h2>🔒 Servicios Privados</h2>
-            <p>Disfruta de servicios privados exclusivos adaptados a tus deseos.</p>
-        </section>
+        <label class="field">
+          <span>Fecha de consulta</span>
+          <input type="date" name="readingDate" id="readingDate" required />
+        </label>
+      </div>
 
-        <section id="parties">
-            <h2>🎉 Fiestas Privadas</h2>
-            <p>Organiza fiestas privadas inolvidables con William Gozler.</p>
-        </section>
+      <label class="field full">
+        <span>Nombre o iniciales (opcional)</span>
+        <input type="text" name="initials" maxlength="25" placeholder="Ej: JAHB" />
+      </label>
 
-        <section id="orgy">
-            <h2>🔥 Organizador de Orgías</h2>
-            <p>Planeación y organización de orgías de alto nivel según tus especificaciones.</p>
-        </section>
+      <button class="cta" type="submit">Revelar mis cartas</button>
+    </form>
+  </main>
 
-        <section id="drag">
-            <h2>👠 Evento Drag (Próximamente)</h2>
-            <p>Permaneced atentos a nuestros próximos eventos drag, actualmente en construcción.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>Sigue a William Gozler en <a href="https://x.com/william_gozler" target="_blank">Twitter</a> y <a href="https://onlyfans.com/william_gozler" target="_blank">OnlyFans</a>.</p>
-    </footer>
+  <script>
+    const today = new Date().toISOString().split("T")[0];
+    document.getElementById("readingDate").value = today;
+  </script>
 </body>
 </html>
-
